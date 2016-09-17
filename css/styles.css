@@ -9,8 +9,8 @@ body {
 .add-people {
 	color: white;
 	position: fixed;
-	bottom: 25px;
-	right: 25px;
+	bottom: 35px;
+	right: 35px;
 	background-color: #d23f31;
 	height: 50px;
 	width: 50px;
@@ -20,7 +20,9 @@ body {
 }
 
 .search-btn {
-	color: white
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 0;
 }
 
 .heart {
@@ -29,4 +31,8 @@ body {
 
 .error {
 	color: red;
+}
+
+.search-bar {
+	margin: 8px 0 7px 0;
 }
