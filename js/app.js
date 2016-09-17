@@ -5,11 +5,7 @@ var app = angular.module('onePush', []);
 app.controller('ListCtrl', ['$http', '$scope', function($http, $scope) {
 	$scope.loading = true;
 	$scope.serverError = false;
-	$scope.likes = 0;
-	$scope.incrLike = function() {
-		$scope.likes++;
-	}
-
+	
 	$http.get('https://hackerearth.0x10.info/api/one-push?type=json&query=list_websites').then(function(data) {
 		$scope.peopleList = data.data.websites;
 		$scope.loading = false;
