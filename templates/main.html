@@ -1,0 +1,35 @@
+<!-- people section -->
+<section class="container lower-body" ng-controller="ListCtrl">
+	<div ng-if="loading" class="text-center">
+		<h4>Loading...</h4>
+	</div>
+	<div ng-if="serverError" class="text-center error">
+		<h4>{{errorMessage}}</h4>
+	</div>
+	<div class="list-group row">
+		<div ng-if="!loading" class="list-group-item no-of-sites">
+			<h5>We've found {{noOfSites}} personal web portfolio.</h5>
+			<button class="btn btn-default big-add-btn" type="button" data-toggle="modal" data-target="#myModal">Add portfolio</button>
+		</div>
+		<div class="list-group-item col-md-4" ng-repeat="person in peopleList | filter: searchText">
+			<div class="row">
+			    <div class="col-xs-4">
+			    	<img class="img-thumbnail people-img" src="{{person.favicon_image}}">
+			    </div>
+			    <div class="col-xs-8">
+			      	<h4 class="list-group-item-heading">{{person.title}}</h4>
+			     	<div class="list-group-item-text">
+			     		<p class="tag"><span><i class="fa fa-tag" aria-hidden="true"></i></span>
+			     		{{person.tag}}</p>
+			     	</div>
+			     	<div>
+				      	<span><a href="{{person.url_address}}" target="_blank">
+				      		<span><i class="fa fa-link" aria-hidden="true"></i></span>
+				      		link
+				      	</a></span>
+				    </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</section>
