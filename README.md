@@ -2,7 +2,7 @@
 I have used AngularJS, Bootstrap and Jquery for building this app.
 
 #Live Link
-https://razat249.github.io
+https://razat249.github.io/OnePush
 
 # Deployment
 - Unzip `one-push.zip` file which I have added.
