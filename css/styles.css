@@ -60,8 +60,8 @@ body {
 
 .onepush-navbar {
 	margin-bottom: 0;
-	background-color: #19ab73;
-    border-color: #19ab73;
+	background-color: #444;
+    border-color: #444;
 	box-shadow: 2px 0px 5px #888888;
 }
 
@@ -74,6 +74,12 @@ body {
   		margin-top: 100px;
   	}
   	.add-people {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.big-add-btn {
 		display: none;
 	}
 }
