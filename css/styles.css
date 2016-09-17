@@ -36,3 +36,41 @@ body {
 .search-bar {
 	margin: 8px 0 7px 0;
 }
+
+.btn:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    color: white;
+}
+
+.btn:active:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    color: white;
+}
+
+.no-of-sites {
+	color: #19ab73;
+}
+
+.people-img {
+	height: 80px;
+	width: 80px;
+}
+
+.onepush-navbar {
+	margin-bottom: 0;
+	background-color: #444;
+    border-color: #444;
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.lower-body {
+	margin-top: 50px;
+}
+
+@media (min-width: 800px) {
+  	.lower-body {
+  		margin-top: 100px;
+  	}
+}
