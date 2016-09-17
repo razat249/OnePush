@@ -25,7 +25,7 @@ body {
 	margin-bottom: 0;
 }
 
-.heart {
+.thumb {
 	color: #999;
 }
 
@@ -60,17 +60,20 @@ body {
 
 .onepush-navbar {
 	margin-bottom: 0;
-	background-color: #444;
-    border-color: #444;
-	box-shadow: 2px 2px 5px #888888;
+	background-color: #19ab73;
+    border-color: #19ab73;
+	box-shadow: 2px 0px 5px #888888;
 }
 
 .lower-body {
 	margin-top: 50px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   	.lower-body {
   		margin-top: 100px;
   	}
+  	.add-people {
+		display: none;
+	}
 }
